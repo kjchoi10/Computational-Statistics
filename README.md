@@ -1,3 +1,6 @@
+Question for computational statistics course at Boston University:
+Topic: Randomwalk, Monte Carlo estimation, Importance Sampling
+
 A BU student leaves a party close to Agganis arena and two groups of friends invite
 him to the Paradise Club (PC) and to the BU Pub (BP). Since he is undecided, he
 decides to play the following game3: he divides the path between PC and BP in twenty
@@ -7,16 +10,6 @@ he walks west and so decrements his current position; if it’s heads, he walks 
 increments his position. The game ends if he reaches either PC or BP.
 The following R function simulates his random walk; parameter p is the probability of
 moving east
-
-rwalk <- function (p) {
-j <- 1 # start
-walk <- c() # store movements
-repeat {
-j <- j + (2 * rbinom(1, 1, p) - 1) # move
-walk <- append(walk, j)
-if (j == 0 || j == 20) return(walk)
-}
-}
 
 (a) What is the probability that he ends up at BP? Run 100,000 simulations and
 obtain a Monte Carlo estimate. Report a 95% confidence interval.

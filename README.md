@@ -3,7 +3,7 @@ Computational statistics portfolio
 -Includes:
 
 
-1) data analytics projects:
+1) data analytics research:
   - uses R shiny to make an web app that analyzes two years worth of sales data (aggregated monthly sales data).
   - the methods uses are first differencing (to remove seasonality) and linear regression.
   - the original test data was from the hospitality industry
